@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python
 
 #from udacityplots import *
 import warnings
@@ -9,12 +9,12 @@ import matplotlib
 import base64
 import json
 import subprocess
+import numpy as np
+import matplotlib.pyplot as plt
+
 warnings.filterwarnings("ignore")
 matplotlib.use('agg')
-
-#import numpy as np
-#import matplotlib.pyplot as plt
-#plt.ioff()
+plt.ioff()
 
 
 def prettyPicture(clf, X_test, y_test):
@@ -63,4 +63,4 @@ def output_image(name, format, bytes):
     data['name'] = name
     data['format'] = format
     data['bytes'] = base64.encodestring(bytes)
-    print("image_start + json.dumps(data)+image_end")
+    print(json.dumps(data))

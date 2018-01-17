@@ -1,6 +1,7 @@
-#!/usr/bin/python
+#!/usr/bin/env python
 from prep_terrain_data import makeTerrainData
-from class_vis import prettyPicture, output_image
+from class_vis import prettyPicture
+from class_vis import output_image
 from ClassifyNB import classify
 
 import numpy as np
