@@ -35,7 +35,7 @@ print("Hello")
 # Be sure to change to that code tab to complete this quiz.
 clf = classify(features_train, labels_train)
 
-
+print(clf.score(features_test, labels_test))
 
 ### draw the decision boundary with the text points overlaid
 prettyPicture(clf, features_test, labels_test)
