@@ -1,2 +1,2 @@
-# Machine_learning-pratice
+# Machine_Learning-Practice
 Praticeing Machine learning
